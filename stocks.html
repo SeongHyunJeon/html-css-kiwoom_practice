@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kiwoom - Interesting stocks page</title>
+  </head>
+
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+
+      <div class="status-bar__column">
+        <i class="fa-solid fa-lock"></i>
+        <span>100%</span>
+        <i class="fa-solid fa-battery-full fa-lg"></i>
+        <i class="fa-solid fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="stocks-header">
+      <div class="stocks-header__column">
+        <div class="stocks-header__column__blank"></div>
+        <div class="stocks-header__column__title">
+          <span>관심종목</span>
+          <div class="stocks-header__column__title__myasset">
+            <span>MY</span>
+            <span>자산</span>
+          </div>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+      </div>
+      <div class="stocks-header__column">
+        <div class="stocks-header__column__chart">
+          <i class="fa-solid fa-caret-up"></i>
+          <i class="fa-solid fa-chart-line"></i>
+        </div>
+        <div class="stocks-header__column__check">
+          <input type="checkbox" id="detail" />
+          <label for="detail">상세</label>
+        </div>
+        <div class="stocks-header__column__category">
+          <span>관심종목 1</span>
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="stocks-header__column__price">
+          <span>현재가</span>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+        <div class="stocks-header__column__edit">
+          <span>종목</span>
+          <span>편집</span>
+        </div>
+      </div>
+
+      <div class="stocks-header__sort">
+        <div class="stocks-header__sort__name">
+          <span>종목명</span>
+          <i class="fa-solid fa-caret-up"></i>
+        </div>
+
+        <div class="stocks-header__sort__price">
+          <span>현재가</span>
+          <i class="fa-solid fa-caret-up"></i>
+        </div>
+
+        <div class="stocks-header__sort__fluctuation">
+          <span>등락(대비)</span>
+          <i class="fa-solid fa-caret-up"></i>
+        </div>
+
+        <div class="stocks-header__sort__volume">
+          <span>거래량</span>
+          <i class="fa-solid fa-caret-up"></i>
+        </div>
+
+        <div class="stocks-header__sort__bar">
+          <span>봉</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="stocks-main">
+      <div class="stocks-main__stock">
+        <div class="stocks-main__stock__name">
+          <span>신</span>
+          <span>삼성전자</span>
+        </div>
+        <div class="stocks-main__stock__price positive-color">
+          <span>59,500</span>
+        </div>
+        <div class="stocks-main__stock__fluctuation positive-color">
+          <span>0.34%</span>
+          <span>200</span>
+          <i class="fa-solid fa-caret-up"></i>
+        </div>
+        <div class="stocks-main__stock__volumne">
+          <span>12,053,813</span>
+        </div>
+        <div class="stocks-main__stock__bar">
+          <span class="stocks-main__stock__bar-1 positive-bar"></span>
+        </div>
+      </div>
+      <div class="stocks-main__stock">
+        <div class="stocks-main__stock__name">
+          <span>신</span>
+          <span>LG에너지솔루션</span>
+        </div>
+        <div class="stocks-main__stock__price negative-color">
+          <span>485,500</span>
+        </div>
+        <div class="stocks-main__stock__fluctuation negative-color">
+          <span>-0.10%</span>
+          <span>500</span>
+          <i class="fa-solid fa-caret-down"></i>
+        </div>
+        <div class="stocks-main__stock__volumne">
+          <span>310,663</span>
+        </div>
+        <div class="stocks-main__stock__bar">
+          <span class="stocks-main__stock__bar-2 negative-bar"></span>
+        </div>
+      </div>
+      <div class="stocks-main__stock">
+        <div class="stocks-main__stock__name">
+          <span>신</span>
+          <span>삼성바이오로직스</span>
+        </div>
+        <div class="stocks-main__stock__price positive-color">
+          <span>835,000</span>
+        </div>
+        <div class="stocks-main__stock__fluctuation positive-color">
+          <span>1.46%</span>
+          <span>12,000</span>
+          <i class="fa-solid fa-caret-down"></i>
+        </div>
+        <div class="stocks-main__stock__volumne">
+          <span>41,042</span>
+        </div>
+        <div class="stocks-main__stock__bar">
+          <span class="stocks-main__stock__bar-3 positive-bar"></span>
+        </div>
+      </div>
+      <div class="stocks-main__stock">
+        <div class="stocks-main__stock__name">
+          <span>신</span>
+          <span>SK하이닉스</span>
+        </div>
+        <div class="stocks-main__stock__price negative-color">
+          <span>78,400</span>
+        </div>
+        <div class="stocks-main__stock__fluctuation negative-color">
+          <span>-2.24%</span>
+          <span>1,800</span>
+          <i class="fa-solid fa-caret-down"></i>
+        </div>
+        <div class="stocks-main__stock__volumne">
+          <span>3,678,254</span>
+        </div>
+        <div class="stocks-main__stock__bar">
+          <span class="stocks-main__stock__bar-4 negative-bar"></span>
+        </div>
+      </div>
+      <div class="stocks-main__stock">
+        <div class="stocks-main__stock__name">
+          <span>신</span>
+          <span>삼성SDI</span>
+        </div>
+        <div class="stocks-main__stock__price positive-color">
+          <span>667,000</span>
+        </div>
+        <div class="stocks-main__stock__fluctuation positive-color">
+          <span>0.30%</span>
+          <span>2,000</span>
+          <i class="fa-solid fa-caret-up"></i>
+        </div>
+        <div class="stocks-main__stock__volumne">
+          <span>257,483</span>
+        </div>
+        <div class="stocks-main__stock__bar">
+          <span class="stocks-main__stock__bar-5 positive-bar"></span>
+        </div>
+      </div>
+      <div class="stocks-main__stock">
+        <div class="stocks-main__stock__name">
+          <span>신</span>
+          <span>LG화학</span>
+        </div>
+        <div class="stocks-main__stock__price positive-color">
+          <span>645,000</span>
+        </div>
+        <div class="stocks-main__stock__fluctuation positive-color">
+          <span>0.31%</span>
+          <span>2,000</span>
+          <i class="fa-solid fa-caret-up"></i>
+        </div>
+        <div class="stocks-main__stock__volumne">
+          <span>173,605</span>
+        </div>
+        <div class="stocks-main__stock__bar">
+          <span class="stocks-main__stock__bar-5 positive-bar"></span>
+        </div>
+      </div>
+      <div class="stocks-main__stock">
+        <div class="stocks-main__stock__name">
+          <span>신</span>
+          <span>삼성전자우</span>
+        </div>
+        <div class="stocks-main__stock__price negative-color">
+          <span>53,800</span>
+        </div>
+        <div class="stocks-main__stock__fluctuation negative-color">
+          <span>-0.37%</span>
+          <span>200</span>
+          <i class="fa-solid fa-caret-down"></i>
+        </div>
+        <div class="stocks-main__stock__volumne">
+          <span>936,447</span>
+        </div>
+        <div class="stocks-main__stock__bar">
+          <span class="stocks-main__stock__bar-2 negative-bar"></span>
+        </div>
+      </div>
+      <div class="stocks-main__stock">
+        <div class="stocks-main__stock__name">
+          <span>신</span>
+          <span>현대차</span>
+        </div>
+        <div class="stocks-main__stock__price positive-color">
+          <span>162,500</span>
+        </div>
+        <div class="stocks-main__stock__fluctuation positive-color">
+          <span>0.31%</span>
+          <span>500</span>
+          <i class="fa-solid fa-caret-up"></i>
+        </div>
+        <div class="stocks-main__stock__volumne">
+          <span>440,113</span>
+        </div>
+        <div class="stocks-main__stock__bar">
+          <span class="stocks-main__stock__bar-5 positive-bar"></span>
+        </div>
+      </div>
+      <div class="stocks-main__stock">
+        <div class="stocks-main__stock__name">
+          <span>신</span>
+          <span>NAVER</span>
+        </div>
+        <div class="stocks-main__stock__price negative-color">
+          <span>180,500</span>
+        </div>
+        <div class="stocks-main__stock__fluctuation negative-color">
+          <span>-1.10%</span>
+          <span>2,000</span>
+          <i class="fa-solid fa-caret-down"></i>
+        </div>
+        <div class="stocks-main__stock__volumne">
+          <span>906,454</span>
+        </div>
+        <div class="stocks-main__stock__bar">
+          <span class="stocks-main__stock__bar-6 negative-bar"></span>
+        </div>
+      </div>
+      <div class="stocks-main__stock">
+        <div class="stocks-main__stock__name">
+          <span>신</span>
+          <span>기아</span>
+        </div>
+        <div class="stocks-main__stock__price">
+          <span>64,100</span>
+        </div>
+        <div
+          class="stocks-main__stock__fluctuation stocks-main__stock__fluctuation-none"
+        >
+          <span>0.00%</span>
+          <span>0</span>
+          <i class="fa-solid fa-caret-down"></i>
+        </div>
+        <div class="stocks-main__stock__volumne">
+          <span>1,117,317</span>
+        </div>
+        <div class="stocks-main__stock__bar">
+          <span class="stocks-main__stock__bar-7"></span>
+        </div>
+      </div>
+    </main>
+
+    <div class="market-conditions">
+      <span>코스피</span>
+      <span>2,360.02</span>
+      <i class="fa-solid fa-caret-down"></i>
+      <span>0.95</span>
+      <span>0.04%</span>
+      <span>414,172</span>
+    </div>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__list__menu">
+          <div>
+            <i class="fa-solid fa-bars"></i>
+            <span>메뉴</span>
+          </div>
+          <div>
+            <span>주식</span>
+          </div>
+        </li>
+        <a href="stocks.html">
+          <li class="nav__list__btn nav__list__btn-curpage">
+            <i class="fa-solid fa-up-right-from-square"></i>
+            <span>관심종목</span>
+          </li>
+        </a>
+
+        <a href="price.html">
+          <li class="nav__list__btn">
+            <i class="fa-solid fa-arrow-up-short-wide"></i>
+            <span>현재가</span>
+          </li>
+        </a>
+
+        <a href="order.html">
+          <li class="nav__list__btn">
+            <i class="fa-solid fa-repeat"></i>
+            <span>주문</span>
+          </li>
+        </a>
+
+        <a href="chart.html">
+          <li class="nav__list__btn">
+            <i class="fa-solid fa-chart-line"></i>
+            <span>차트</span>
+          </li>
+        </a>
+
+        <a href="account.html">
+          <li class="nav__list__btn">
+            <i class="fa-solid fa-sack-dollar"></i>
+            <span>계좌</span>
+          </li>
+        </a>
+
+        <li class="nav__list__icon">
+          <i class="fa-solid fa-caret-right"></i>
+        </li>
+      </ul>
+    </nav>
+
+    <script
+      src="https://kit.fontawesome.com/47147f6500.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
